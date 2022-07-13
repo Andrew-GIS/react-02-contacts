@@ -15,6 +15,8 @@ background-color: ${p => `${p.theme.colors.wheat}`} ;
 export const FilterLable = styled.label`
 display: flex;
 flex-direction: column;
+justify-content: center;
+align-items: center;
 padding-left: ${p => `${p.theme.space[4]}px`};
 width: 80%;
 `;

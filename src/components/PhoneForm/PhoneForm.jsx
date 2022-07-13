@@ -17,14 +17,12 @@ export class PhoneSection extends Component{
 
 	handleSubmit = event => {
 		event.preventDefault();
-		// console.log('States :>> ', this.state);
 		this.props.onSubmit(this.state);
 		this.reset();
 	}
 
 	reset = () => {
 		this.setState({ name: "", number: "" });
-		// this.setState{ ...INIT_STATE };
 	}
 
 	render() {

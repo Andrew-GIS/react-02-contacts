@@ -27,7 +27,6 @@ export class App extends Component{
         return alert(`${name} is already in contacts.`);
       }
       else {
-        //  return { contacts: [...prevState.contacts, {id: nanoid(), data}] };
         const id = nanoid();
         console.log('id :>> ', id);
         return { contacts: [{ id: id, name, number }, ...prevState.contacts] };
@@ -56,11 +55,9 @@ export class App extends Component{
         <FilterSection title={"Find contacts by name"} value={this.filter} onChange={this.onChangeFilter}></FilterSection>
         <h2 className='secondaryTitle'>Contacts</h2>
         {(this.state.contacts.length === 0)
-          ? (<h2 className='secondaryTitle'>No Contects in your PhoneBook</h2>)
+          ? (<h3 className='warningText'>No Contects in your PhoneBook</h3>)
           : (<ContactForm contacts={this.getFilteredContact()} onDeleteContact={this.deleteContact} />)}
       </>
     );
   };
 }
-
-        // <ContactForm contacts={this.getFilteredContact()} onDeleteContact={this.deleteContact} />

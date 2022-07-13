@@ -36,5 +36,4 @@ background-color: ${p => `${p.theme.colors.secondary}`};
 border-radius: 5px;
 :hover {
 	background-color: ${p => `${p.theme.colors.accent}`} ;
-}
-`;
+}`;

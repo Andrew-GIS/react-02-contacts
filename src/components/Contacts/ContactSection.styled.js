@@ -8,19 +8,20 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-border: 1px solid blue;
+//border: 1px solid blue;
 padding: ${p => `${p.theme.space[4]}px`};
 margin: 0 auto 0 auto;
 width: 30%;
-background-color: ${p => `${p.theme.colors.wheat}`} ;
+//background-color: ${p => `${p.theme.colors.wheat}`} ;
 `;
 
 export const Header = styled.li`
-display: inline-flex;
+display: flex;
 justify-content: space-between;
 flex-direction: row;
 min-width: 200px;
 width: 100%;
+border: solid 1px red;
 padding: ${p => `${p.theme.space[4]}px`};
 background-color: ${p => `${p.theme.colors.accent}`};
 `;
