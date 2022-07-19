@@ -84,7 +84,7 @@
 обязательны.
 
 ```jsx
-<BrowserRouter basename="https://andrew-gis.github.io/react-02-contacts/">
+<BrowserRouter basename="https://andrew-gis.github.io/goit-react-hw-03-phonebook/">
   <App />
 </BrowserRouter>
 ```

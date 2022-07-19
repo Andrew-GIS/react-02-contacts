@@ -90,7 +90,7 @@ propsie `basename` dokładną nazwę twojego repozytorium. Slash na początku i 
 końcu łańcucha jest obowiązkowy.
 
 ```jsx
-<BrowserRouter basename="/https://andrew-gis.github.io/react-02-contacts/">
+<BrowserRouter basename="/https://andrew-gis.github.io/goit-react-hw-03-phonebook/">
   <App />
 </BrowserRouter>
 ```
